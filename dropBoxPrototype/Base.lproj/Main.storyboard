@@ -76,7 +76,7 @@
                                 <frame key="frameInset" minX="36" minY="450" width="303" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="XJp-nV-sTh" kind="modal" identifier="createNewAccount" id="QWS-jl-G6n"/>
+                                    <segue destination="XJp-nV-sTh" kind="modal" identifier="" id="QWS-jl-G6n"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MIf-8Z-rYc">
@@ -117,7 +117,7 @@
                                 <frame key="frameInset" minX="3" minY="553" width="364" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="nT6-4W-UF4" kind="push" id="dvi-aK-tVd"/>
+                                    <segue destination="nT6-4W-UF4" kind="push" identifier="createNewAccount" id="dvi-aK-tVd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -461,7 +461,7 @@
                                 <frame key="frameInset" minX="3" minY="491" width="364" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="VLC-dd-6WS" kind="push" id="Hgu-V7-vIB"/>
+                                    <segue destination="VLC-dd-6WS" kind="push" identifier="signInAccountRoot" id="Hgu-V7-vIB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sAx-Cd-S8Y">
@@ -646,7 +646,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ehy-YK-mV3"/>
+        <segue reference="dvi-aK-tVd"/>
         <segue reference="Hgu-V7-vIB"/>
     </inferredMetricsTieBreakers>
 </document>
