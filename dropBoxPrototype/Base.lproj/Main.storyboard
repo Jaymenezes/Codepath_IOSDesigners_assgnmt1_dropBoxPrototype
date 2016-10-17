@@ -443,8 +443,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ALg-ke-NGA" kind="relationship" relationship="viewControllers" id="SeF-KD-bdK"/>
                         <segue destination="xSL-2V-HwN" kind="relationship" relationship="viewControllers" id="JEZ-AA-6cz"/>
+                        <segue destination="ALg-ke-NGA" kind="relationship" relationship="viewControllers" id="SeF-KD-bdK"/>
                         <segue destination="Wb7-1d-yad" kind="relationship" relationship="viewControllers" id="DaK-ZD-vkP"/>
                         <segue destination="00D-vo-Rhk" kind="relationship" relationship="viewControllers" id="ZEL-0S-65u"/>
                     </connections>
@@ -581,6 +581,13 @@
                                     <segue destination="O6K-si-pBI" kind="push" id="iep-AE-62W"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MXz-8R-V3z">
+                                <frame key="frameInset" minX="66" minY="237" width="239" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="dfl-89-G88" kind="modal" id="Kjl-GF-mIF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -588,7 +595,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zxg-Xx-7Ce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2711" y="1072"/>
+            <point key="canvasLocation" x="2710.5" y="1071.5"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="3fN-Ot-QEJ">
+            <objects>
+                <viewController id="dfl-89-G88" customClass="forgotPasswordViewController" customModule="dropBoxPrototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sMv-Ju-DMK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sign_in3" id="hXL-HU-vIV">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4aG-d5-NdO">
+                                <frame key="frameInset" minX="68" minY="614" width="239" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onCancelForgot:" destination="dfl-89-G88" eventType="touchUpInside" id="dF6-lb-YsH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelForgot" destination="4aG-d5-NdO" id="rCh-RA-7SU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RTv-sa-2YS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2508" y="1862"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="N4U-uH-thx">
@@ -715,8 +752,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Kb7-VW-62c" kind="relationship" relationship="viewControllers" id="vPI-e3-tJj"/>
                         <segue destination="07A-sM-YUG" kind="relationship" relationship="viewControllers" id="IfK-Qw-h2n"/>
+                        <segue destination="Kb7-VW-62c" kind="relationship" relationship="viewControllers" id="vPI-e3-tJj"/>
                         <segue destination="Kwt-DL-X29" kind="relationship" relationship="viewControllers" id="T2U-wB-1dE"/>
                         <segue destination="goh-9Y-zA8" kind="relationship" relationship="viewControllers" id="IKo-pC-XNR"/>
                     </connections>
@@ -737,7 +774,7 @@
                                 <frame key="frameInset" minY="64" width="375" height="552"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="empty_favorites" id="Dlg-Hq-54y">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="favorited" id="Dlg-Hq-54y">
                                 <frame key="frameInset" minY="64" width="375" height="552"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -984,6 +1021,7 @@
         <image name="existing_photos" width="320" height="725"/>
         <image name="favorite_btn" width="26" height="25"/>
         <image name="favorite_icon" width="36" height="36"/>
+        <image name="favorited" width="320" height="417"/>
         <image name="favorited_btn" width="26" height="25"/>
         <image name="favorites_tab" width="30" height="30"/>
         <image name="files_tab" width="30" height="30"/>
@@ -992,6 +1030,7 @@
         <image name="settings" width="320" height="772"/>
         <image name="settings_tab" width="30" height="30"/>
         <image name="sign_in1" width="320" height="568"/>
+        <image name="sign_in3" width="320" height="568"/>
         <image name="terms" width="320" height="568"/>
         <image name="welcome1" width="320" height="568"/>
         <image name="welcome2" width="320" height="568"/>
