@@ -1,5 +1,5 @@
 //
-//  SignInRootViewController.swift
+//  UserSettingViewController.swift
 //  dropBoxPrototype
 //
 //  Created by user on 10/16/16.
@@ -8,15 +8,13 @@
 
 import UIKit
 
-class SignInRootViewController: UIViewController {
+class UserSettingViewController: UIViewController {
+    @IBOutlet weak var UserSettings: UIImageView!
 
+    @IBOutlet weak var userSettingsScrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        performSegue(withIdentifier: "signInSegue", sender: self
-        )
-        
-    
+        userSettingsScrollView.contentSize = UserSettings.frame.size
 
         // Do any additional setup after loading the view.
     }

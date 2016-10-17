@@ -16,6 +16,8 @@
 		CE1FC49D1DB3A4C7001DFC18 /* SignInRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1FC49C1DB3A4C7001DFC18 /* SignInRootViewController.swift */; };
 		CE1FC49F1DB3A8B7001DFC18 /* TermsServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1FC49E1DB3A8B7001DFC18 /* TermsServiceViewController.swift */; };
 		CE1FC4A11DB3FE0E001DFC18 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1FC4A01DB3FE0E001DFC18 /* SettingsViewController.swift */; };
+		CEA11B2F1DB45BB6004082CD /* ExistingPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA11B2E1DB45BB6004082CD /* ExistingPhotosViewController.swift */; };
+		CEA11B311DB463B0004082CD /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA11B301DB463B0004082CD /* UserSettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		CE1FC49C1DB3A4C7001DFC18 /* SignInRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRootViewController.swift; sourceTree = "<group>"; };
 		CE1FC49E1DB3A8B7001DFC18 /* TermsServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsServiceViewController.swift; sourceTree = "<group>"; };
 		CE1FC4A01DB3FE0E001DFC18 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CEA11B2E1DB45BB6004082CD /* ExistingPhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingPhotosViewController.swift; sourceTree = "<group>"; };
+		CEA11B301DB463B0004082CD /* UserSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +70,9 @@
 				CE1FC48A1DB39F7C001DFC18 /* ViewController.swift */,
 				CE1FC49A1DB3A4BC001DFC18 /* CreateAccountRootViewController.swift */,
 				CE1FC49C1DB3A4C7001DFC18 /* SignInRootViewController.swift */,
+				CEA11B2E1DB45BB6004082CD /* ExistingPhotosViewController.swift */,
 				CE1FC48C1DB39F7C001DFC18 /* Main.storyboard */,
+				CEA11B301DB463B0004082CD /* UserSettingViewController.swift */,
 				CE1FC4A01DB3FE0E001DFC18 /* SettingsViewController.swift */,
 				CE1FC49E1DB3A8B7001DFC18 /* TermsServiceViewController.swift */,
 				CE1FC48F1DB39F7C001DFC18 /* Assets.xcassets */,
@@ -152,7 +158,9 @@
 				CE1FC49B1DB3A4BC001DFC18 /* CreateAccountRootViewController.swift in Sources */,
 				CE1FC49F1DB3A8B7001DFC18 /* TermsServiceViewController.swift in Sources */,
 				CE1FC48B1DB39F7C001DFC18 /* ViewController.swift in Sources */,
+				CEA11B2F1DB45BB6004082CD /* ExistingPhotosViewController.swift in Sources */,
 				CE1FC4891DB39F7C001DFC18 /* AppDelegate.swift in Sources */,
+				CEA11B311DB463B0004082CD /* UserSettingViewController.swift in Sources */,
 				CE1FC4A11DB3FE0E001DFC18 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +321,7 @@
 				CE1FC4991DB39F7C001DFC18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

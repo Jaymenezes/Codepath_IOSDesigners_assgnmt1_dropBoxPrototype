@@ -1,5 +1,5 @@
 //
-//  SignInRootViewController.swift
+//  ExistingPhotosViewController.swift
 //  dropBoxPrototype
 //
 //  Created by user on 10/16/16.
@@ -8,15 +8,14 @@
 
 import UIKit
 
-class SignInRootViewController: UIViewController {
+class ExistingPhotosViewController: UIViewController {
+    
+    @IBOutlet weak var photosImage: UIImageView!
 
+    @IBOutlet weak var photosScrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        performSegue(withIdentifier: "signInSegue", sender: self
-        )
-        
-    
+        photosScrollView.contentSize = photosImage.frame.size
 
         // Do any additional setup after loading the view.
     }

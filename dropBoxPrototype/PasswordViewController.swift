@@ -1,5 +1,5 @@
 //
-//  SignInRootViewController.swift
+//  PasswordViewController.swift
 //  dropBoxPrototype
 //
 //  Created by user on 10/16/16.
@@ -8,15 +8,11 @@
 
 import UIKit
 
-class SignInRootViewController: UIViewController {
+class PasswordViewController: UIViewController {
+    @IBOutlet weak var backToWelcome: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        performSegue(withIdentifier: "signInSegue", sender: self
-        )
-        
-    
 
         // Do any additional setup after loading the view.
     }
@@ -26,6 +22,10 @@ class SignInRootViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onBackToWelcome(_ sender: AnyObject) {
+        navigationController!.popViewController(animated: true)
+
+    }
 
     /*
     // MARK: - Navigation

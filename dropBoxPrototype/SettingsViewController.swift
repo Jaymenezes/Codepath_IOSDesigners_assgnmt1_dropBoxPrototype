@@ -13,10 +13,13 @@ class SettingsViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var settings: UIImageView!
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.delegate = self
         scrollView.contentSize = settings.frame.size
+        
+
         
         
         // Do any additional setup after loading the view.
