@@ -77,6 +77,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="welcome3" id="qeg-IH-9Uk">
+                                        <rect key="frame" x="750" y="0.0" width="375" height="667"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="i6P-n0-mg6">
                                         <rect key="frame" x="786" y="433" width="303" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -85,16 +89,19 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MIf-8Z-rYc">
-                                        <rect key="frame" x="890" y="533" width="94" height="29"/>
+                                        <rect key="frame" x="890" y="543" width="94" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <segue destination="lsI-PM-xkW" kind="modal" identifier="signInAccountRoot" id="97n-cN-0Xi"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="welcome3" id="qeg-IH-9Uk">
-                                        <rect key="frame" x="750" y="0.0" width="375" height="667"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IjJ-he-QOM">
+                                        <rect key="frame" x="147" y="525" width="94" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
+                                        <connections>
+                                            <segue destination="lsI-PM-xkW" kind="modal" id="jkC-CV-wXs"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -581,7 +588,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zxg-Xx-7Ce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2611.5" y="1021.5"/>
+            <point key="canvasLocation" x="2711" y="1072"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="N4U-uH-thx">
@@ -718,10 +725,10 @@
             </objects>
             <point key="canvasLocation" x="4553" y="2772"/>
         </scene>
-        <!--View Controller-->
+        <!--File Favorited View Controller-->
         <scene sceneID="NV4-2R-uDD">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="AC5-a4-5ZG" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="AC5-a4-5ZG" customClass="FileFavoritedViewController" customModule="dropBoxPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Xg-Gx-V8F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -730,7 +737,7 @@
                                 <frame key="frameInset" minY="64" width="375" height="552"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="favorited" id="Dlg-Hq-54y">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="empty_favorites" id="Dlg-Hq-54y">
                                 <frame key="frameInset" minY="64" width="375" height="552"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -741,7 +748,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzh-4p-Xhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5139.5" y="3695.5"/>
+            <point key="canvasLocation" x="5213" y="3696"/>
         </scene>
         <!--Files-->
         <scene sceneID="PLR-PU-NRd">
@@ -762,10 +769,10 @@
             </objects>
             <point key="canvasLocation" x="4552.5" y="3695.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Favorite View Controller-->
         <scene sceneID="0EL-nB-vGG">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="UqI-Z9-ILD" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="UqI-Z9-ILD" customClass="FavoriteViewController" customModule="dropBoxPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3r9-AG-5MY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -774,35 +781,67 @@
                                 <frame key="frameInset" minY="63" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="hKW-I6-gDF"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XyE-qS-F3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5139.5" y="4583.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="5qN-6P-Ivk">
-            <objects>
-                <viewController id="zLv-tp-ne9" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Nz3-X7-u1V">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="empty_favorites" id="eh9-wO-wwr">
-                                <frame key="frameInset" minY="65" width="375" height="554"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CKz-2W-yJE">
+                                <frame key="frameInset" minX="324" minY="327" width="28" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="favorite_btn"/>
+                                <state key="selected" image="favorited_btn"/>
+                                <connections>
+                                    <action selector="onFavorite:" destination="UqI-Z9-ILD" eventType="touchUpInside" id="Rit-RC-0kV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ell-Jb-aIU">
+                                <frame key="frameInset" minX="324" minY="263" width="28" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="favorite_btn"/>
+                                <state key="selected" image="favorited_btn"/>
+                                <connections>
+                                    <action selector="onFavorite:" destination="UqI-Z9-ILD" eventType="touchUpInside" id="204-Hw-Rxo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zis-WJ-qt1">
+                                <frame key="frameInset" minX="323" minY="198" width="28" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="favorite_btn"/>
+                                <state key="selected" image="favorited_btn"/>
+                                <connections>
+                                    <action selector="onFavorite:" destination="UqI-Z9-ILD" eventType="touchUpInside" id="bsM-sh-o4I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rft-dk-aPa">
+                                <frame key="frameInset" minX="322" minY="136" width="28" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="favorite_btn"/>
+                                <state key="selected" image="favorited_btn"/>
+                                <connections>
+                                    <action selector="onFavorite:" destination="UqI-Z9-ILD" eventType="touchUpInside" id="rVz-FY-7o5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xZP-8x-Zao">
+                                <frame key="frameInset" minX="323" minY="391" width="28" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="favorite_btn"/>
+                                <state key="selected" image="favorited_btn"/>
+                                <connections>
+                                    <action selector="onFavorite:" destination="UqI-Z9-ILD" eventType="touchUpInside" id="cqs-ej-9BM"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="favorite_icon" id="1Fs-2O-eeN">
+                                <frame key="frameInset" minX="32" minY="345" width="22" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IqY-fe-BD1"/>
+                    <navigationItem key="navigationItem" id="hKW-I6-gDF"/>
+                    <connections>
+                        <outlet property="favoriteButton" destination="CKz-2W-yJE" id="1QG-BV-eM9"/>
+                        <outlet property="favoritedIcon" destination="1Fs-2O-eeN" id="4Tf-Em-BUp"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ulv-ln-Vgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XyE-qS-F3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5680" y="4584"/>
+            <point key="canvasLocation" x="5139.5" y="4583.5"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="390-4m-bS2">
@@ -943,7 +982,9 @@
         <image name="empty_photos" width="320" height="454"/>
         <image name="existing_files" width="320" height="454"/>
         <image name="existing_photos" width="320" height="725"/>
-        <image name="favorited" width="320" height="417"/>
+        <image name="favorite_btn" width="26" height="25"/>
+        <image name="favorite_icon" width="36" height="36"/>
+        <image name="favorited_btn" width="26" height="25"/>
         <image name="favorites_tab" width="30" height="30"/>
         <image name="files_tab" width="30" height="30"/>
         <image name="logged_out" width="320" height="568"/>
@@ -962,9 +1003,9 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="6Je-Xd-pxN"/>
         <segue reference="ehy-YK-mV3"/>
         <segue reference="97n-cN-0Xi"/>
+        <segue reference="FTK-Hi-0D9"/>
         <segue reference="Hgu-V7-vIB"/>
     </inferredMetricsTieBreakers>
 </document>

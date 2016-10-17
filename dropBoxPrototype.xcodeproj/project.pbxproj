@@ -20,6 +20,7 @@
 		CEA11B311DB463B0004082CD /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA11B301DB463B0004082CD /* UserSettingViewController.swift */; };
 		CEA11B351DB474D1004082CD /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA11B341DB474D1004082CD /* WelcomeViewController.swift */; };
 		CEA11B371DB480BE004082CD /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA11B361DB480BE004082CD /* FavoriteViewController.swift */; };
+		CEA11B391DB48539004082CD /* FileFavoritedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA11B381DB48539004082CD /* FileFavoritedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		CEA11B301DB463B0004082CD /* UserSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingViewController.swift; sourceTree = "<group>"; };
 		CEA11B341DB474D1004082CD /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		CEA11B361DB480BE004082CD /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		CEA11B381DB48539004082CD /* FileFavoritedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileFavoritedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				CEA11B361DB480BE004082CD /* FavoriteViewController.swift */,
 				CEA11B301DB463B0004082CD /* UserSettingViewController.swift */,
 				CE1FC4A01DB3FE0E001DFC18 /* SettingsViewController.swift */,
+				CEA11B381DB48539004082CD /* FileFavoritedViewController.swift */,
 				CEA11B341DB474D1004082CD /* WelcomeViewController.swift */,
 				CE1FC49E1DB3A8B7001DFC18 /* TermsServiceViewController.swift */,
 				CE1FC48F1DB39F7C001DFC18 /* Assets.xcassets */,
@@ -168,6 +171,7 @@
 				CE1FC48B1DB39F7C001DFC18 /* ViewController.swift in Sources */,
 				CEA11B2F1DB45BB6004082CD /* ExistingPhotosViewController.swift in Sources */,
 				CE1FC4891DB39F7C001DFC18 /* AppDelegate.swift in Sources */,
+				CEA11B391DB48539004082CD /* FileFavoritedViewController.swift in Sources */,
 				CEA11B311DB463B0004082CD /* UserSettingViewController.swift in Sources */,
 				CE1FC4A11DB3FE0E001DFC18 /* SettingsViewController.swift in Sources */,
 			);
