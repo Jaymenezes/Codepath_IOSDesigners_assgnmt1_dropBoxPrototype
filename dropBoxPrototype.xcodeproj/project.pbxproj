@@ -18,6 +18,8 @@
 		CE1FC4A11DB3FE0E001DFC18 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1FC4A01DB3FE0E001DFC18 /* SettingsViewController.swift */; };
 		CEA11B2F1DB45BB6004082CD /* ExistingPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA11B2E1DB45BB6004082CD /* ExistingPhotosViewController.swift */; };
 		CEA11B311DB463B0004082CD /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA11B301DB463B0004082CD /* UserSettingViewController.swift */; };
+		CEA11B351DB474D1004082CD /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA11B341DB474D1004082CD /* WelcomeViewController.swift */; };
+		CEA11B371DB480BE004082CD /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA11B361DB480BE004082CD /* FavoriteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		CE1FC4A01DB3FE0E001DFC18 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CEA11B2E1DB45BB6004082CD /* ExistingPhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingPhotosViewController.swift; sourceTree = "<group>"; };
 		CEA11B301DB463B0004082CD /* UserSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingViewController.swift; sourceTree = "<group>"; };
+		CEA11B341DB474D1004082CD /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		CEA11B361DB480BE004082CD /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +76,10 @@
 				CE1FC49C1DB3A4C7001DFC18 /* SignInRootViewController.swift */,
 				CEA11B2E1DB45BB6004082CD /* ExistingPhotosViewController.swift */,
 				CE1FC48C1DB39F7C001DFC18 /* Main.storyboard */,
+				CEA11B361DB480BE004082CD /* FavoriteViewController.swift */,
 				CEA11B301DB463B0004082CD /* UserSettingViewController.swift */,
 				CE1FC4A01DB3FE0E001DFC18 /* SettingsViewController.swift */,
+				CEA11B341DB474D1004082CD /* WelcomeViewController.swift */,
 				CE1FC49E1DB3A8B7001DFC18 /* TermsServiceViewController.swift */,
 				CE1FC48F1DB39F7C001DFC18 /* Assets.xcassets */,
 				CE1FC4911DB39F7C001DFC18 /* LaunchScreen.storyboard */,
@@ -154,9 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA11B351DB474D1004082CD /* WelcomeViewController.swift in Sources */,
 				CE1FC49D1DB3A4C7001DFC18 /* SignInRootViewController.swift in Sources */,
 				CE1FC49B1DB3A4BC001DFC18 /* CreateAccountRootViewController.swift in Sources */,
 				CE1FC49F1DB3A8B7001DFC18 /* TermsServiceViewController.swift in Sources */,
+				CEA11B371DB480BE004082CD /* FavoriteViewController.swift in Sources */,
 				CE1FC48B1DB39F7C001DFC18 /* ViewController.swift in Sources */,
 				CEA11B2F1DB45BB6004082CD /* ExistingPhotosViewController.swift in Sources */,
 				CE1FC4891DB39F7C001DFC18 /* AppDelegate.swift in Sources */,
